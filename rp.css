@@ -1,0 +1,1064 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    height: 70px;
+    padding: 0px 40px; 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.301);
+    grid-template-areas: "headpart1 headpart2";
+}
+
+
+.head1 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.head1 label {
+    font-weight: lighter;
+}
+
+.head2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu1 {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.menu1:hover {
+    background-color: rgba(0, 0, 0, 0.638);
+    color: white;
+}
+
+.div1 {
+    width: 100%;
+    position: relative;
+}
+
+.div1 img {
+    width: 100%;
+}
+
+.div1 .subdiv1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 25px;
+}
+
+.br {
+    width: 120px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.848);
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.arch h1{
+    color: white;
+    font-weight: lighter;
+}
+
+.div2 {
+    /* width: 100%; */
+    /* height: 1000px; */
+    padding: 8px 16px;
+}
+
+.subdiv2 {
+    padding: 32px 16px;
+}
+
+.subdiv2a {
+    margin: 10px 0px;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.186);
+}   
+
+.subdiv2 h3 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.subdiv3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "first second third fourth"
+                         "fifth sixth seventh eighth";  
+    gap: 20px;                       
+}
+
+.subdiv3 img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+/* .subdiv3 img:hover {
+    color: #000000;
+    opacity: 1;
+} */
+
+.subdiv3 .cell {
+    position: relative;
+}
+
+.subdiv3 .box { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.box h3 {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.subdiv4 {
+    padding: 32px 16px;
+}
+
+.subdiv4a {
+    margin: 10px 0px;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.186);
+}  
+
+.subdiv4 h3 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.subdiv4 p {
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin: 15px 0px;
+    padding: 0px 10px;
+}
+
+.div4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "contact1 contact2 contact3 contact4";
+    padding: 32px 16px;
+    gap: 20px;
+}
+
+.div4 img {
+    max-width: 100%;
+    filter: grayscale(70%);
+    cursor: pointer;
+}
+
+.div4 .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+    background-color: white;
+    height: auto    ;  
+    height: 350px;
+    padding: 16px;
+
+}
+
+.div4 h2  {
+    font-weight: lighter;
+    font-size: 33px;
+}
+
+.div4 h4 {
+    font-weight: lighter;
+    color: grey;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.div4 p {
+    font-weight: lighter;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.div4 button {
+    border: none;
+    padding: 10px 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.div4 button:hover{
+    background-color: black;
+    color: white;
+}
+
+.div5 {
+    padding: 32px 16px;
+}
+
+.subdiv5 {
+    padding: 32px 16px;
+}
+
+.subdiv5a {
+    margin: 10px 0px;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.186);
+}  
+
+.subdiv5 h3 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form p {
+    margin: 15px 0px;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.form .form1 {
+    display: grid;
+    grid-template-rows: 60px 60px 60px 60px;
+    row-gap: 30px;
+}
+
+.form1 input {
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.173);
+}
+
+.buttonwrap button {
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 16px 16px;
+    width: 200px;
+    cursor: pointer;
+   
+}
+
+.buttonwrap button:hover{
+    background-color: gray;
+    color: #000000;
+}
+
+.div6 img{
+    width: 100%;
+    display: block;
+}
+
+.div7 {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 64px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.fa-facebook, .fa-instagram, .fa-snapchat, .fa-pinterest, .fa-twitter, .fa-linkedin {
+    font-size: 30px;
+    color: #ffffffd0;
+    cursor: pointer;
+}
+
+.div7 p a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.div7 p a:hover {
+    color: gray;
+}
+
+.div7 p {
+    line-height: 2.5;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-instagram:hover {
+    color: rgb(217, 35, 87);
+}
+
+.fa-snapchat:hover {
+    color: rgb(232, 209, 37);
+}
+
+.fa-pinterest:hover {
+    color: rgb(202, 14, 14);
+}
+
+.fa-twitter:hover {
+    color: rgb(37, 205, 221);
+} 
+
+.fa-linkedin:hover {
+    color: rgb(18, 81, 190);
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------Media Query (max-width:199px) Smartwatch------------------------------------------- */
+
+@media only screen and (max-width: 199px) {
+    .head {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "headpart1" 
+                             "headpart2";
+        height: 90px;
+        padding: 20px 5px;
+        gap: 5px;
+        position: relative;
+    }
+    
+    .head2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .head1, .head2 .menu1 {
+        font-size: 10px;
+    }
+    .head1, .head2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* gap: 20px; */
+    }
+    .menu1 {
+        padding: 4px;
+    }
+    .div1 .subdiv1 {
+
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 7px;
+    }
+    .br {
+        width: 40px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .div2 .box {
+        padding: 10px;
+    }
+    .div2 .cell h3 {
+        font-size: 8px;
+    }
+    .subdiv2 {
+        padding: 0px;
+    }
+    .subdiv2 h3 {
+        font-size: 15px;
+    }
+    .subdiv3 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "first"
+                             "Second"
+                             "Third"
+                             "Fourth"
+                             "Fifth"
+                             "Sixth"
+                             "Seventh"
+                             "Eight"                   
+    }
+    .subdiv3 img {
+        width: 100%;
+        cursor: pointer;
+    }
+    .subdiv4 h3 {
+        font-size: 15px;
+    }
+    .subdiv4 p {
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .div4 {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "contact1" 
+                             "contact2" 
+                             "contact3" 
+                             "contact4";                       
+     }
+     .div4 .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 0px;
+    }
+
+    .div4 .details p {
+        text-align: center;
+        font-size: 10px;
+    }
+    .div4 .details h2 {
+        font-size: 17px;
+    }
+    .div4 .details h4 {
+        font-size: 15px;
+    }
+    .div4 button {
+        width: 100%;
+        font-size: 13px;
+    }
+    .div4 img {
+        width: 100%; 
+    }
+    .subdiv2a {
+        margin: 0px;
+    }   
+    .subdiv5 {
+        padding: 0px;
+    }
+
+    .subdiv5 h3 {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    .div5 .form1 .input1 {
+        font-size: 10px;
+    }
+    .div5 p {
+        font-size: 10px;
+    }
+
+    .buttonwrap button {
+        font-size: 10px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .buttonwrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div7 {
+        padding: 15px 10px;
+    }
+    .div7 i {
+        font-size: 10px;
+    }
+    .div7 .website p{
+        font-size: 10px;
+    }
+    .social {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+
+/* --------------------------------------------Media Query (max-width:419pxpx) Smaller Smartphones--------------------------------------- */
+
+@media only screen and (min-width: 200px) and (max-width: 419px) {
+    .head {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "headpart1" 
+                             "headpart2";
+        height: 90px;
+        padding: 10px;
+        gap: 5px;
+    }
+    .head1, .head2 .menu1 {
+        font-size: 15px;
+    }
+    .head1, .head2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .menu1 {
+        padding: 4px;
+    }
+    .div1 .subdiv1 {
+
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 7px;
+    }
+    .br {
+        width: 50px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .div2 .cell h3 {
+        font-size: 10px;
+    }
+    .subdiv2 h3 {
+        font-size: 25px;
+    }
+    .subdiv3 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "first"
+                             "Second"
+                             "Third"
+                             "Fourth"
+                             "Fifth"
+                             "Sixth"
+                             "Seventh"
+                             "Eight"                   
+    }
+    .subdiv3 img {
+        width: 100%;
+        cursor: pointer;
+    }
+    .subdiv4 h3 {
+        font-size: 25px;
+    }
+    .subdiv4 p {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .div4 {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "contact1" 
+                             "contact2" 
+                             "contact3" 
+                             "contact4";
+    }
+    .div4 .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 0px;
+    }
+
+    .div4 .details p {
+        text-align: center;
+        font-size: 17px;
+    }
+    .div4 .details h2 {
+        font-size: 25px;
+    }
+    .div4 .details h4 {
+        font-size: 20px;
+    }
+    .div4 button {
+        width: 100%;
+        font-size: 17px;
+    }
+    .div4 img {
+        width: 100%; 
+    }
+    .subdiv2a {
+        margin: 0px;
+    }   
+    .subdiv5 {
+        padding: 0px;
+    }
+
+    .subdiv5 h3 {
+        margin: 0px;
+        font-size: 25px;
+    }
+
+    .div5 .form1 .input1 {
+        font-size: 15px;
+    }
+    .div5 p {
+        font-size: 15px;
+    }
+
+    .buttonwrap button {
+        font-size: 13px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .buttonwrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div7 {
+        padding: 25px 16px;
+    }
+    .div7 i {
+        font-size: 20px;
+    }
+    .div7 .website p{
+        font-size: 13px;
+    }
+    .social {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+/* ----------------------------------------------------Media Query (max-width:768px) Smartphones----------------------------------------- */
+
+@media only screen and (min-width: 420px) and (max-width: 767px) {
+    .head {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "headpart1" 
+                             "headpart2";
+        height: 90px;
+        padding: 16px;
+        gap: 20px;
+    }
+    .head1, .head2 .menu1 {
+        font-size: 20px;
+    }
+    .head1, .head2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .menu1 {
+        padding: 4px;
+    }
+    .div1 .subdiv1 {
+
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 9px;
+    }
+    .br {
+        width: 60px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.848);
+        background-color: rgba(0, 0, 0, 0.712);
+    }
+    .subdiv2 h3 {
+        font-size: 30px;
+    }
+    .div2 .cell h3 {
+        font-size: 15px;
+    }
+    .subdiv3 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "first"
+                             "Second"
+                             "Third"
+                             "Fourth"
+                             "Fifth"
+                             "Sixth"
+                             "Seventh"
+                             "Eight"                   
+    }
+    .subdiv3 img {
+        width: 100%;
+        cursor: pointer;
+    }
+    .subdiv4 h3 {
+        font-size: 30px;
+    }
+    .subdiv4 p {
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .div4 {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "contact1" 
+                             "contact2" 
+                             "contact3" 
+                             "contact4";
+    }
+    .div4 .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 0px;
+    }
+
+    .div4 .details p {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .div4 button {
+        width: 100%;
+    }
+    .div4 img {
+        width: 100%; 
+    }
+    .subdiv2a {
+        margin: 0px;
+    }   
+    .subdiv5 {
+        padding: 0px;
+    }
+
+    .subdiv5 h3 {
+        margin: 0px;
+    }
+
+    .buttonwrap button {
+        font-size: 21px;
+        width: 230px;
+        text-align: center;
+    }
+
+    .buttonwrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div7 {
+        padding: 25px 16px;
+    }
+    .social {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+/* ---------------------------------------------------Media Query (max-width:992px) Tablets---------------------------------------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .head {
+        height: 80px;
+        padding: 0px 20px;
+    }
+    .head1, .head2 .menu1 {
+        font-size: 20px;
+    }
+    .head1, .head2 {
+        gap: 30px;
+    }
+    .menu1 {
+        padding: 4px;
+    }
+    .div1 .subdiv1 {
+
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        font-size: 17px;
+    }
+    .br {
+        width: 80px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .subdiv2 h3 {
+        font-size: 35px;
+    }
+    .subdiv3 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "first Second"
+                             "Third Fourth"
+                             "Fifth Sixth"
+                             "Seventh Eight"
+    }
+    .subdiv3 img {
+        width: 100%;
+        cursor: pointer;
+    }
+    .subdiv4 h3 {
+        font-size: 35px;
+    }
+    .subdiv4 p {
+        font-size: 25px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .div4 {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;             
+        grid-template-areas: "contact1 contact2"
+                             "contact3 contact4";
+    }
+    .div4 .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 0px;
+    }
+
+    .div4 .details p {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .div4 button {
+        width: 100%;
+    }
+    .div4 img {
+        width: 100%; 
+    }
+    .subdiv2a {
+        margin: 0px;
+    }   
+    .subdiv5 {
+        padding: 0px;
+    }
+
+    .subdiv5 h3 {
+        margin: 0px;
+        font-size: 35px;
+    }
+
+    .buttonwrap button {
+        font-size: 21px;
+        width: 230px;
+        text-align: center;
+    }
+
+    .buttonwrap {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .div7 {
+        padding: 35px 16px;
+    }
+    .social {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+/* ---------------------------------------------------Media Query (max-width:1280px) Laptops---------------------------------------------- */
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+    .head {
+        height: 80px;
+        padding: 0px 20px;
+    }
+    .head1, .head2 .menu1 {
+        font-size: 20px;
+    }
+    .head1, .head2 {
+        gap: 30px;
+    }
+    .menu1 {
+        padding: 4px;
+    }
+    .div1 .subdiv1 {
+
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        font-size: 17px;
+    }
+    .br {
+        width: 80px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .subdiv2 h3 {
+        font-size: 35px;
+    }
+    .subdiv3 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "first Second"
+                             "Third Fourth"
+                             "Fifth Sixth"
+                             "Seventh Eight"
+    }
+    .subdiv3 img {
+        width: 100%;
+        cursor: pointer;
+    }
+    .subdiv4 h3 {
+        font-size: 35px;
+    }
+    .subdiv4 p {
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .div4 {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;             
+        grid-template-areas: "contact1 contact2"
+                             "contact3 contact4";
+    }
+    .div4 .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 0px;
+    }
+
+    .div4 .details p {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .div4 button {
+        width: 100%;
+    }
+    .div4 img {
+        width: 100%; 
+    }
+    .subdiv2a {
+        margin: 0px;
+    }   
+    .subdiv5 {
+        padding: 0px;
+    }
+
+    .subdiv5 h3 {
+        margin: 0px;
+        font-size: 35px;
+    }
+
+    .buttonwrap button {
+        font-size: 21px;
+        width: 230px;
+        text-align: center;
+    }
+
+    .buttonwrap {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .div7 {
+        padding: 35px 16px;
+    }
+    .social {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
